@@ -29,13 +29,7 @@ let activate = (context) => {
 	display: flex;
 	justify-content: center;
 	padding: 5%;
-	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
   }
-  body::-webkit-scrollbar {
-	width: 5px;
-  }
-  
   .iphone-x {
 	position: relative;
 	z-index: 1;
@@ -54,7 +48,6 @@ let activate = (context) => {
 	padding: 15px 22px;
 	width: 342px;
 	z-index: 1;
-	overflow: hidden;
   }
   .iphone-x .screen {
 	background:#fff;

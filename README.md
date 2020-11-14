@@ -1,65 +1,47 @@
-# mobileview README
+# MobileView for VS Code
 
-This is the README for your extension "mobileview". After writing up a brief description, we recommend including the following sections.
+MobileView provides a responsive mobile view for testing mobile view of your apps and websites directly form visual studio code.
+
+![MobileView](media/fullscreen.png)
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+MobileView can view projects running on local server and remote urls. You can view your project on a iPhone X screen.
 
-For example if there is an image subfolder under your extension project workspace:
+To Do:
+* Add more screen sizes.
 
-\!\[feature X\]\(images/feature-x.png\)
+<!-- > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow. -->
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Getting Started
 
-## Requirements
+You can download MobileView from the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=cirlorm.mobileview).
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Once you have it, you should see something similar to this:
 
-## Extension Settings
+![stories UI](media/sidebar.png)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+You can click on the "phone" icon in the left sibebar tray. Once you have done that, you will see a menu open, then click on "Start MobileView" from the menu.
+You'll now see a text input box open
 
-For example:
+![stories UI](media/input.png)
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Enter the url to your project and press "Enter".
+> Please make sure you provide the protocal (http or https).
+For example: "http://localhost:3000" or "https://google.com"
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+This is v0.0.1.
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+I will adding more features, next on my to-do list is to add more screen sizes including ipad and tablets.
 
 -----------------------------------------------------------------------------------------------------------
 
-## Working with Markdown
+## About Me
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+**twitter** [@cirlorm_io](http://twitter.com/cirlorm_io)
+**github** [champ3oy](https://github.com/champ3oy)
+**website** [cirlorm.dev](https://cirlorm.dev)
 
 **Enjoy!**
