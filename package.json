@@ -1,0 +1,72 @@
+{
+  "name": "mobileview",
+  "displayName": "MobileView",
+  "description": "Provides a responsive mobile view for testing mobile view of your apps and websites directly form vs code.",
+  "publisher": "cirlorm",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.51.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:mobileview.start"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mobileview.start",
+        "title": "Start Mobile View"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "mobileView",
+          "title": "Mobile View Icon",
+          "icon": "media/phone.svg"
+        }
+      ],
+      "panel": [
+        {
+          "id": "mobileViewIconP",
+          "title": "Mobile View Icon",
+          "icon": "media/phone.svg"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "startMobileView2",
+        "contents": "Welcome to Mobile View Extension. This is not a complete product but you can see our To-Do list on [github](https://github.com/champ3oy).\nHow to use. \n\n 1. Click on the button below.\n2. An input box will open, enter the url of your server or remote url. (please make sure you specity the http or https protocol). \n 3. Hit Enter \n \n .\n[Start MobileView](command:mobileview.start)"
+      }
+    ],
+    "views": {
+      "mobileView": [
+        {
+          "id": "startMobileView2",
+          "name": "Phones",
+          "icon": "media/phone.svg"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.51.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^12.11.7",
+    "eslint": "^7.9.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.1.3",
+    "typescript": "^4.0.2",
+    "vscode-test": "^1.4.0"
+  }
+}
