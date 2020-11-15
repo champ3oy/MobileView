@@ -3,12 +3,25 @@
   "displayName": "MobileView",
   "description": "Provides a responsive mobile view for testing mobile view of your apps and websites directly form vs code.",
   "publisher": "cirlorm",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "icon": "media/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/champ3oy/MobileView"
-},
+  },
+  "author": {
+    "name": "Jonathan Selorm Akoto",
+    "email": "cirlorm6@gmail.com",
+    "url": "https://cirlorm.dev"
+  },
+  "keywords": [
+    "responsive",
+    "mobile view",
+    "browser",
+    "phone",
+    "iphone",
+    "iphone x"
+  ],
   "engines": {
     "vscode": "^1.51.0"
   },

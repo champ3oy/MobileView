@@ -2,11 +2,13 @@
 
 MobileView provides a responsive mobile view for testing mobile view of your apps and websites directly form visual studio code.
 
-![MobileView](media/fullscreen.png)
+![MobileView](https://i.ibb.co/NmWwW2x/fullscreen.png)
 
 ## Features
 
 MobileView can view projects running on local server and remote urls. You can view your project on a iPhone X screen.
+You can change frame from white to dark.
+You can hard reload
 
 To Do:
 * Add more screen sizes.
@@ -19,12 +21,12 @@ You can download MobileView from the [VSCode Marketplace](https://marketplace.vi
 
 Once you have it, you should see something similar to this:
 
-![stories UI](media/sidebar.png)
+![stories UI](https://i.ibb.co/pQ6chs9/sidebar.png)
 
 You can click on the "phone" icon in the left sibebar tray. Once you have done that, you will see a menu open, then click on "Start MobileView" from the menu.
 You'll now see a text input box open
 
-![stories UI](media/input.png)
+![stories UI](https://i.ibb.co/HYZDrj3/input.png)
 
 Enter the url to your project and press "Enter".
 > Please make sure you provide the protocal (http or https).
@@ -32,7 +34,7 @@ For example: "http://localhost:3000" or "https://google.com"
 
 ## Release Notes
 
-This is v0.0.1.
+This is v0.0.3
 
 I will adding more features, next on my to-do list is to add more screen sizes including ipad and tablets.
 
