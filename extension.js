@@ -1,22 +1,12 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 const vscode = require("vscode");
 const path = require("path");
-
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
 
 /**
  * @param {vscode.ExtensionContext} context
  */
 let activate = (context) => {
-  // Use the console to output diagnostic information (console.log) and errors (console.error)
-  // This line of code will only be executed once when your extension is activated
   console.log('Congratulations, your extension "mobileview" is now active!');
 
-  // The command has been defined in the package.json file
-  // Now provide the implementation of the command with  registerCommand
-  // The commandId parameter must match the command field in package.json
   let getWebviewContent = (url, refresh, stop, close, dark) => {
     return `<!DOCTYPE html>
 	<html lang="en">
@@ -81,8 +71,15 @@ let activate = (context) => {
 		  width: 342px;
 		  z-index: 1;
 		}
+		.screen.vscode-light {
+			background: #000;
+			color: black;
+		}
+		.screen.vscode-dark {
+			background: white;
+			color: white;
+		}
 		.iphone-x .screen {
-		  background: #000;
 		  background-position: center center;
 		  background-size: cover;
 		  border-radius: 33px;
@@ -248,7 +245,7 @@ let activate = (context) => {
 		<div class="control">
 		  <div
 			style="cursor: pointer"
-			onclick="window.parent.location = document.referrer"
+			id="refresh"
 		  >
 			<img src="${refresh}" style="width: 20px; height: 20px" />
 		  </div>
@@ -283,6 +280,14 @@ let activate = (context) => {
 		  ${url}
 		</div>
 		<script>
+		let refresh = document.getElementById("refresh")
+			refresh.addEventListener("click", function() {
+				var fr=document.getElementById('myiframe');
+				if(fr!=null) {document.getElementById("side").removeChild(fr)}
+				var iframehtml="<iframe id='myiframe' class='screen' src='${url}'></iframe>";
+				document.getElementById("side").innerHTML=iframehtml;
+			})
+
 		  let dark = document.getElementById("dark");
 		  let _dark = dark[0];
 	
@@ -311,11 +316,6 @@ let activate = (context) => {
   let disposable = vscode.commands.registerCommand(
     "mobileview.start",
     async () => {
-      // The code you place here will be executed every time your command is executed
-
-      // Display a message box to the user
-      // vscode.window.showInformationMessage("Hello World from MobileView!");
-
       let options = {
         prompt: "Enter your local server URL.",
         placeHolder: "http://localhost:3000",
@@ -337,7 +337,15 @@ let activate = (context) => {
 
       //   vscode.window.registerTreeDataProvider('nodeDependencies', new DepNodeProvider());
 
-      if (!!pattern.test(input)) {
+      let _input = input.includes("localhost")
+        ? input.replace("localhost", "127.0.0.1")
+        : input;
+
+      if (
+        !!pattern.test(
+          _input.substring(0, 4) == "http" ? _input : `http://${_input}`
+        )
+      ) {
         const panel = vscode.window.createWebviewPanel(
           "mobileView", // Identifies the type of the webview. Used internally
           "Mobile View", // Title of the panel displayed to the user
@@ -372,7 +380,7 @@ let activate = (context) => {
 
         // And set its HTML content
         panel.webview.html = getWebviewContent(
-          input,
+          _input.substring(0, 4) == "http" ? _input : `http://${_input}`,
           refresh_n,
           stop_n,
           close_n,
