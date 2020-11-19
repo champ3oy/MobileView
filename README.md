@@ -12,7 +12,6 @@ You can hard reload
 
 To Do:
 * Add more screen sizes.
-* Add a developer console.
 
 <!-- > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow. -->
 
@@ -35,7 +34,7 @@ For example: "http://localhost:3000" or "https://google.com"
 
 ## Release Notes
 
-This is v0.0.4
+This is v0.0.3
 
 I will adding more features, next on my to-do list is to add more screen sizes including ipad and tablets.
 

@@ -3,7 +3,7 @@
   "displayName": "MobileView",
   "description": "Provides a responsive mobile view for testing mobile view of your apps and websites directly form vs code.",
   "publisher": "cirlorm",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "icon": "media/icon.png",
   "repository": {
     "type": "git",
@@ -37,6 +37,10 @@
       {
         "command": "mobileview.start",
         "title": "Start Mobile View"
+      },
+      {
+        "command": "outliner.outline",
+        "title": "Outline"
       }
     ],
     "viewsContainers": {
@@ -67,6 +71,12 @@
           "id": "startMobileView2",
           "name": "Phones",
           "icon": "media/phone.svg"
+        }
+      ],
+      "explorer": [
+        {
+          "id": "documentOutline",
+          "name": "Document Outline"
         }
       ]
     }
