@@ -1,0 +1,596 @@
+*,
+*:before,
+*:after {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 0;
+  max-width: 1244px;
+}
+
+section.phone-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.phone-outer {
+  position: absolute;
+  top: 76px;
+  left: 40%;
+  margin-left: -200px;
+  width: 400px;
+  height: 780px;
+  background: white;
+  background: -moz-linear-gradient(left, white 0%, #d1d1d1 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, white),
+    color-stop(100%, #d1d1d1)
+  );
+  background: -webkit-linear-gradient(left, white 0%, #d1d1d1 100%);
+  background: -o-linear-gradient(left, white 0%, #d1d1d1 100%);
+  background: -ms-linear-gradient(left, white 0%, #d1d1d1 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(white),
+    to(#d1d1d1)
+  );
+  background: linear-gradient(to right, white 0%, #d1d1d1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#ffffff",
+      endColorstr="#d1d1d1",
+      GradientType=1
+  );
+  border-radius: 38px;
+  -webkit-box-shadow: 0px 18px 88px 3px rgba(55, 55, 55, 0.5);
+  box-shadow: 0px 18px 88px 3px rgba(55, 55, 55, 0.5);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.phone-outer .power {
+  position: absolute;
+  top: 167px;
+  right: -4px;
+  width: 4px;
+  height: 58px;
+  border-radius: 0px 4px 4px 0px;
+  background: #946d12;
+  background: -moz-linear-gradient(left, #946d12 0%, #eb9500 15%, #eb9500 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, #946d12),
+    color-stop(15%, #eb9500),
+    color-stop(100%, #eb9500)
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #946d12 0%,
+    #eb9500 15%,
+    #eb9500 100%
+  );
+  background: -o-linear-gradient(left, #946d12 0%, #eb9500 15%, #eb9500 100%);
+  background: -ms-linear-gradient(left, #946d12 0%, #eb9500 15%, #eb9500 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#946d12),
+    color-stop(15%, #eb9500),
+    to(#eb9500)
+  );
+  background: linear-gradient(to right, #946d12 0%, #eb9500 15%, #eb9500 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#946d12",
+      endColorstr="#eb9500",
+      GradientType=1
+  );
+  -webkit-box-shadow: inset 1px -3px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px -3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.phone-outer .volume {
+  position: absolute;
+  top: 257px;
+  right: -5px;
+  width: 5px;
+  height: 116px;
+  border-radius: 0px 4px 4px 0px;
+  background: white;
+  background: -moz-linear-gradient(left, white 0%, white 14%, #c9c7c9 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, white),
+    color-stop(14%, white),
+    color-stop(100%, #c9c7c9)
+  );
+  background: -webkit-linear-gradient(left, white 0%, white 14%, #c9c7c9 100%);
+  background: -o-linear-gradient(left, white 0%, white 14%, #c9c7c9 100%);
+  background: -ms-linear-gradient(left, white 0%, white 14%, #c9c7c9 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(white),
+    color-stop(14%, white),
+    to(#c9c7c9)
+  );
+  background: linear-gradient(to right, white 0%, white 14%, #c9c7c9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#ffffff",
+      endColorstr="#c9c7c9",
+      GradientType=1
+  );
+  -webkit-box-shadow: inset 1px -3px 1px 0px rgba(0, 0, 0, 0.33);
+  box-shadow: inset 1px -3px 1px 0px rgba(0, 0, 0, 0.33);
+}
+
+.phone-inner {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  background: url("https://res.cloudinary.com/dhlebhk0x/image/upload/v1540453975/inner.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-color: #161617;
+  border-radius: 40px;
+}
+
+.phone-inner .border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.notch {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  width: 178px;
+  margin-left: -89px;
+  height: 46px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 99995;
+}
+
+.notch .main {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.notch .grill-outer {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  width: 50px;
+  margin-left: -25px;
+  height: 10px;
+  border-radius: 1px 1px 6px 6px;
+  background: #19191a;
+  background: -moz-linear-gradient(top, #19191a 0%, #282829 100%);
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, #19191a),
+    color-stop(100%, #282829)
+  );
+  background: -webkit-linear-gradient(top, #19191a 0%, #282829 100%);
+  background: -o-linear-gradient(top, #19191a 0%, #282829 100%);
+  background: -ms-linear-gradient(top, #19191a 0%, #282829 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#19191a),
+    to(#282829)
+  );
+  background: linear-gradient(to bottom, #19191a 0%, #282829 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#19191a",
+      endColorstr="#282829",
+      GradientType=0
+  );
+}
+
+.notch .grill {
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  width: 48px;
+  height: 8px;
+  border-radius: 1px 1px 5px 5px;
+  background-color: #2a2a2c;
+  background: #2a2a2c
+    url("https://res.cloudinary.com/dhlebhk0x/image/upload/v1540453975/pattern.svg");
+  background-repeat: repeat;
+  background-size: 3px 3px;
+}
+
+.notch .camera-1 {
+  position: absolute;
+  top: 8px;
+  left: 32px;
+  width: 22px;
+}
+
+.notch .camera-2 {
+  position: absolute;
+  top: 8px;
+  right: 32px;
+  width: 22px;
+}
+
+.chin-grill {
+  position: absolute;
+  bottom: 23px;
+  left: 50%;
+  width: 138px;
+  margin-left: -69px;
+  height: 9px;
+  border-radius: 9px;
+  background: #19191a;
+  background: -moz-linear-gradient(top, #19191a 0%, #282829 100%);
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, #19191a),
+    color-stop(100%, #282829)
+  );
+  background: -webkit-linear-gradient(top, #19191a 0%, #282829 100%);
+  background: -o-linear-gradient(top, #19191a 0%, #282829 100%);
+  background: -ms-linear-gradient(top, #19191a 0%, #282829 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#19191a),
+    to(#282829)
+  );
+  background: linear-gradient(to bottom, #19191a 0%, #282829 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#19191a",
+      endColorstr="#282829",
+      GradientType=0
+  );
+}
+
+.chin-grill .inner {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 134px;
+  height: 5px;
+  border-radius: 7px;
+  background-color: #252527;
+  background: #252527 url("../img/pattern.svg");
+  background-repeat: repeat;
+  background-size: 3px 3px;
+}
+
+.phone-screen {
+  position: absolute;
+  top: 18px;
+  left: 17px;
+  width: 367px;
+  height: 706px;
+  background: #161617;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 0;
+  max-width: 1244px;
+}
+
+section.phone-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.phone-outer {
+  position: absolute;
+  top: 76px;
+  left: 40%;
+  margin-left: -200px;
+  width: 400px;
+  height: 780px;
+  background: white;
+  background: -moz-linear-gradient(left, white 0%, #d1d1d1 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, white),
+    color-stop(100%, #d1d1d1)
+  );
+  background: -webkit-linear-gradient(left, white 0%, #d1d1d1 100%);
+  background: -o-linear-gradient(left, white 0%, #d1d1d1 100%);
+  background: -ms-linear-gradient(left, white 0%, #d1d1d1 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(white),
+    to(#d1d1d1)
+  );
+  background: linear-gradient(to right, white 0%, #d1d1d1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d1d1', GradientType=1 );
+  border-radius: 38px;
+  -webkit-box-shadow: 0px 18px 88px 3px rgba(55, 55, 55, 0.5);
+  box-shadow: 0px 18px 88px 3px rgba(55, 55, 55, 0.5);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.phone-outer .power {
+  position: absolute;
+  top: 167px;
+  right: -4px;
+  width: 4px;
+  height: 58px;
+  border-radius: 0px 4px 4px 0px;
+  background: #946d12;
+  background: -moz-linear-gradient(left, #946d12 0%, #eb9500 15%, #eb9500 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, #946d12),
+    color-stop(15%, #eb9500),
+    color-stop(100%, #eb9500)
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #946d12 0%,
+    #eb9500 15%,
+    #eb9500 100%
+  );
+  background: -o-linear-gradient(left, #946d12 0%, #eb9500 15%, #eb9500 100%);
+  background: -ms-linear-gradient(left, #946d12 0%, #eb9500 15%, #eb9500 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#946d12),
+    color-stop(15%, #eb9500),
+    to(#eb9500)
+  );
+  background: linear-gradient(to right, #946d12 0%, #eb9500 15%, #eb9500 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#946d12', endColorstr='#eb9500', GradientType=1 );
+  -webkit-box-shadow: inset 1px -3px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px -3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.phone-outer .volume {
+  position: absolute;
+  top: 257px;
+  right: -5px;
+  width: 5px;
+  height: 116px;
+  border-radius: 0px 4px 4px 0px;
+  background: white;
+  background: -moz-linear-gradient(left, white 0%, white 14%, #c9c7c9 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, white),
+    color-stop(14%, white),
+    color-stop(100%, #c9c7c9)
+  );
+  background: -webkit-linear-gradient(left, white 0%, white 14%, #c9c7c9 100%);
+  background: -o-linear-gradient(left, white 0%, white 14%, #c9c7c9 100%);
+  background: -ms-linear-gradient(left, white 0%, white 14%, #c9c7c9 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(white),
+    color-stop(14%, white),
+    to(#c9c7c9)
+  );
+  background: linear-gradient(to right, white 0%, white 14%, #c9c7c9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c9c7c9', GradientType=1 );
+  -webkit-box-shadow: inset 1px -3px 1px 0px rgba(0, 0, 0, 0.33);
+  box-shadow: inset 1px -3px 1px 0px rgba(0, 0, 0, 0.33);
+}
+
+.phone-inner {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  background: url("https://res.cloudinary.com/dhlebhk0x/image/upload/v1540453975/inner.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-color: #161617;
+  border-radius: 40px;
+}
+
+.phone-inner .border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.notch {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  width: 178px;
+  margin-left: -89px;
+  height: 46px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 99995;
+}
+
+.notch .main {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.notch .grill-outer {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  width: 50px;
+  margin-left: -25px;
+  height: 10px;
+  border-radius: 1px 1px 6px 6px;
+  background: #19191a;
+  background: -moz-linear-gradient(top, #19191a 0%, #282829 100%);
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, #19191a),
+    color-stop(100%, #282829)
+  );
+  background: -webkit-linear-gradient(top, #19191a 0%, #282829 100%);
+  background: -o-linear-gradient(top, #19191a 0%, #282829 100%);
+  background: -ms-linear-gradient(top, #19191a 0%, #282829 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#19191a),
+    to(#282829)
+  );
+  background: linear-gradient(to bottom, #19191a 0%, #282829 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19191a', endColorstr='#282829', GradientType=0 );
+}
+
+.notch .grill {
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  width: 48px;
+  height: 8px;
+  border-radius: 1px 1px 5px 5px;
+  background-color: #2a2a2c;
+  background: #2a2a2c
+    url("https://res.cloudinary.com/dhlebhk0x/image/upload/v1540453975/pattern.svg");
+  background-repeat: repeat;
+  background-size: 3px 3px;
+}
+
+.notch .camera-1 {
+  position: absolute;
+  top: 8px;
+  left: 32px;
+  width: 22px;
+}
+
+.notch .camera-2 {
+  position: absolute;
+  top: 8px;
+  right: 32px;
+  width: 22px;
+}
+
+.phone-screen {
+  position: absolute;
+  top: 18px;
+  left: 17px;
+  width: 367px;
+  height: 706px;
+  background: #161617;
+  border-radius: 30px;
+  overflow: hidden;
+}

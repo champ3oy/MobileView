@@ -1,0 +1,111 @@
+/* Relevant styles */
+.ipad-mini-3 {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  box-sizing: content-box;
+  width: 128em;
+  height: 170.667em;
+  font-size: 4px;
+  border-radius: 11em;
+  padding: 20.667em 7em;
+  border: 1em solid transparent;
+  background: linear-gradient(
+        45deg,
+        transparent 38%,
+        #f5f6f8 49%,
+        transparent 50%
+      )
+      top -8em left -1em,
+    linear-gradient(-45deg, transparent 49%, #f5f6f8 50%, transparent 62%) top -4em
+      right -1em,
+    linear-gradient(-45deg, transparent 49%, #f5f6f8 50%, transparent 62%)
+      bottom -8em left -1em,
+    linear-gradient(45deg, transparent 38%, #f5f6f8 49%, transparent 50%) bottom -6em
+      right -1em,
+    radial-gradient(farthest-side at left top, #47474d, transparent) top -1em left -1em,
+    radial-gradient(farthest-side at left bottom, #47474d, transparent) bottom -1em
+      left -1em,
+    radial-gradient(farthest-side at right bottom, #47474d, transparent) bottom -1em
+      right -1em,
+    radial-gradient(farthest-side at right top, #47474d, transparent) top -1em right -1em;
+  background-size: 20% 20%;
+  background-color: currentColor;
+  background-repeat: no-repeat;
+}
+
+.ipad-mini-3::after {
+  content: "";
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  border-radius: 100%;
+  top: 198em;
+  left: calc(50% - 5em);
+}
+
+.ipad-mini-3.black {
+  color: #a3a3a3;
+  box-shadow: inset 0 0 0 0.5em #888b91, inset 0 219.667em 0 -200em #111,
+    inset 0 -219.667em 0 -200em #111, inset 206em 0 0 -200em #111,
+    inset -206em 0 0 -200em #111, inset -207em 0 0 -200em #1d1d1e,
+    inset 207em 0 0 -200em #1d1d1e, inset 0 -220.667em 0 -200em #1d1d1e,
+    inset 0 220.667em 0 -200em #1d1d1e, inset 0 0 0 100em #dee2e1,
+    0 0 5em rgba(0, 0, 0, 0.07);
+}
+
+.ipad-mini-3.black::after {
+  box-shadow: 397em -230em 0 400em rgba(255, 255, 255, 0.05),
+    390em -200em 100em 300em rgba(255, 255, 255, 0.7),
+    5em 2em 2em -2em rgba(17, 17, 17, 0.8), 4em 0 4em -1em rgba(17, 17, 17, 0.8),
+    -3em 1em 1em -2em rgba(17, 17, 17, 0.6),
+    -3em 2em 2em -1em rgba(17, 17, 17, 0.8), 0 0 0 0.667em #404143,
+    0 -192.5em 0 -4.7em rgba(17, 17, 17, 0.5), 0.2em -192.5em 0 -4.5em #04449e,
+    0 -192.5em 0 -4.1em #11356f, 2em -192em 4em -3.5em #111,
+    0 -192.5em 0 -3.5em #27221e;
+}
+
+/* Irrelevant styles */
+
+body,
+html {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 6px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  color: #444;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  position: relative;
+  text-align: left;
+}
+
+span {
+  display: block;
+  color: #666;
+  padding: 10px;
+  margin: 0 30px;
+  font-size: 16px;
+  text-align: left;
+}
+
+a {
+  color: black;
+}
+
+iframe {
+  border: 0;
+  width: 512px;
+  height: 683px;
+}
+
+.ipad-mini-3 {
+  display: block;
+  margin: 10px auto;
+}
