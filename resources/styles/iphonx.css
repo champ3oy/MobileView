@@ -1,5 +1,14 @@
-
-
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+  overflow: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 iframe::-webkit-scrollbar {
   display: none;
 }
@@ -28,7 +37,7 @@ iframe {
   background: #1c1c1c;
   border-radius: 54px;
   box-shadow: inset 0 0 2px 2px dimgrey, inset 0 0 0 6px #e2e3e9,
-    0px -1px 13px 9px rgba(255, 255, 255, 0.8) inset;
+  0px -1px 13px 9px rgba(255, 255, 255, 0.8) inset;
   height: 694px;
   padding: 15px 22px;
   width: 342px;
@@ -43,8 +52,15 @@ iframe {
   width: 342px;
   z-index: 1;
 }
-.iphone-x .screen {
+.screen.vscode-light {
   background: #000;
+  color: black;
+}
+.screen.vscode-dark {
+  background: white;
+  color: white;
+}
+.iphone-x .screen {
   background-position: center center;
   background-size: cover;
   border-radius: 33px;
@@ -55,6 +71,7 @@ iframe {
   margin-top: 6px;
   z-index: 198;
   overflow: hidden;
+  background-color: #000;
 }
 video {
   height: 700px;
@@ -197,10 +214,11 @@ video {
 .control {
   width: 300px;
   height: 40px;
-  background-color: #1c1c1c;
+  background-color: rgb(68, 68, 68);
   margin-bottom: 10px;
   border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 8px
 }

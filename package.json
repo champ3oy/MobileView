@@ -3,7 +3,7 @@
   "displayName": "MobileView",
   "description": "Provides a responsive mobile view for testing mobile view of your apps and websites directly form vs code.",
   "publisher": "cirlorm",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "icon": "media/icon.png",
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
     "browser",
     "phone",
     "iphone",
-    "iphone x"
+    "iphone x",
+    "emulator",
+    "simulator"
   ],
   "engines": {
     "vscode": "^1.51.0"
@@ -29,62 +31,64 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:mobileview.start"
+    "onCommand:mobileview.start",
+    "onCommand:startIphonex.start",
+    "onCommand:startPixel.start"
   ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
       {
         "command": "mobileview.start",
-        "title": "Start Mobile View"
+        "title": "Iphone X"
       },
       {
-        "command": "outliner.outline",
-        "title": "Outline"
+        "command": "startIphonex.start",
+        "title": "Iphone 8"
+      },
+      {
+        "command": "startPixel.start",
+        "title": "Pixel 1"
       }
     ],
     "viewsContainers": {
       "activitybar": [
         {
           "id": "mobileView",
-          "title": "Mobile View Icon",
+          "title": "MobileView",
           "icon": "media/phone.svg"
         }
       ],
       "panel": [
         {
           "id": "mobileViewIconP",
-          "title": "Mobile View Icon",
+          "title": "MobileView",
+          "icon": "media/phone.svg"
+        }
+      ]
+    },
+    "views": {
+      "mobileView": [
+        {
+          "id": "screens",
+          "name": "Screen",
+          "contextualTitle": "MobileView",
           "icon": "media/phone.svg"
         }
       ]
     },
     "viewsWelcome": [
       {
-        "view": "startMobileView2",
-        "contents": "Welcome to Mobile View Extension. This is not a complete product but you can see our To-Do list on [github](https://github.com/champ3oy).\nHow to use. \n\n 1. Click on the button below.\n2. An input box will open, enter the url of your server or remote url. (please make sure you specity the http or https protocol). \n 3. Hit Enter \n \n .\n[Start MobileView](command:mobileview.start)"
+        "view": "screens",
+        "contents": "Thanks for using MobileView [learn more](https://github.com/champ3oy/MobileView/).\n[Use iPhone X](command:mobileview.start)\n[Use iPhone 8](command:startIphonex.start)\n[Use Pixel 1](command:startPixel.start)"
       }
-    ],
-    "views": {
-      "mobileView": [
-        {
-          "id": "startMobileView2",
-          "name": "Phones",
-          "icon": "media/phone.svg"
-        }
-      ],
-      "explorer": [
-        {
-          "id": "documentOutline",
-          "name": "Document Outline"
-        }
-      ]
-    }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
     "pretest": "yarn run lint",
-    "test": "node ./test/runTest.js"
+    "test": "node ./test/runTest.js",
+    "publish": "vsce publish -p mrc6oyyrrwvsmxvat2drndl4goyj77vzas3ghn3imuzhpakxi77a"
   },
   "devDependencies": {
     "@types/vscode": "^1.51.0",

@@ -12,10 +12,12 @@
   height: 877px;
   width: 423px;
   position: relative;
-  margin: 30px auto;
+  margin: 5px auto;
+  margin-left: -48px;
+  margin-top: -40px;
 
-  -webkit-transform: scale(0.8);
-  transform: scale(0.8);
+  -webkit-transform: scale(0.79);
+  transform: scale(0.79);
 }
 
 .phone-top {
@@ -69,7 +71,7 @@
 }
 
 .phone-screen {
-  background: #eee;
+  background: #000;
   border: 1px solid #fff;
   height: 700px;
   width: 375px;
@@ -103,4 +105,23 @@
   top: 190px;
   height: 60px;
   border-radius: 0px 2px 2px 0px;
+}
+.control {
+  position: absolute;
+  top: -60px;
+  left: 60px;
+  /* transform: translate(-50%); */
+  width: 300px;
+  height: 40px;
+  background-color: #1c1c1c;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.url {
+  position: absolute;
+  bottom: -22px;
+  left: 150px;
 }
