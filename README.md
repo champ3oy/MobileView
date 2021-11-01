@@ -1,6 +1,8 @@
 # MobileView for VS Code
 
-MobileView provides a responsive mobile view for testing mobile view of your apps and websites directly form visual studio code.
+MobileView provides a responsive mobile view for testing mobile view of your apps and websites directly in visual studio code.
+
+<a href="https://www.buymeacoffee.com/Cirlorm"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=Cirlorm&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>
 
 ![MobileView](https://i.ibb.co/NmWwW2x/fullscreen.png)
 ![MobileView](https://i.ibb.co/R0V8szb/fullscreen.png)
@@ -42,6 +44,8 @@ This is v0.0.6
 -----------------------------------------------------------------------------------------------------------
 
 ## About Me
+
+<a href="https://www.buymeacoffee.com/Cirlorm"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=Cirlorm&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>
 
 **twitter** [@cirlorm_io](http://twitter.com/cirlorm_io)
 **github** [champ3oy](https://github.com/champ3oy)
