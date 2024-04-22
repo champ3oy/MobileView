@@ -397,7 +397,7 @@ let activate = (context) => {
         : input;
 
       if (
-        !!pattern.test(
+        pattern.test(
           _input.substring(0, 4) == "http" ? _input : `http://${_input}`
         )
       ) {

@@ -13,12 +13,7 @@
   margin: 0;
 }
 
-a,
-a:visited,
-a:link {
-  color: inherit;
-  text-decoration: none;
-}
+
 
 main {
   position: relative;
@@ -86,7 +81,7 @@ section.phone-container {
   backface-visibility: hidden;
 }
 
-.phone-outer .power {
+.power {
   position: absolute;
   top: 167px;
   right: -4px;
@@ -128,7 +123,7 @@ section.phone-container {
   box-shadow: inset 1px -3px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
-.phone-outer .volume {
+.volume {
   position: absolute;
   top: 257px;
   right: -5px;
@@ -189,25 +184,6 @@ section.phone-container {
   border: 2px solid rgba(255, 255, 255, 0.12);
 }
 
-.notch {
-  position: absolute;
-  top: 18px;
-  left: 50%;
-  width: 178px;
-  margin-left: -89px;
-  height: 46px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  z-index: 99995;
-}
-
-.notch .main {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 100%;
-}
-
 .notch .grill-outer {
   position: absolute;
   bottom: 14px;
@@ -253,20 +229,6 @@ section.phone-container {
   background: url("https://res.cloudinary.com/dhlebhk0x/image/upload/v1540453975/pattern.svg");
   background-repeat: repeat;
   background-size: 3px 3px;
-}
-
-.notch .camera-1 {
-  position: absolute;
-  top: 8px;
-  left: 32px;
-  width: 22px;
-}
-
-.notch .camera-2 {
-  position: absolute;
-  top: 8px;
-  right: 32px;
-  width: 22px;
 }
 
 .chin-grill {
@@ -316,54 +278,11 @@ section.phone-container {
   background-size: 3px 3px;
 }
 
-.phone-screen {
-  position: absolute;
-  top: 18px;
-  left: 17px;
-  width: 367px;
-  height: 706px;
-  background: #161617;
-  border-radius: 30px;
-  overflow: hidden;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  padding: 0;
-  margin: 0;
-}
-
 a,
 a:visited,
 a:link {
   color: inherit;
   text-decoration: none;
-}
-
-main {
-  position: relative;
-  margin: 0 auto;
-  padding: 0 0;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-}
-
-.container {
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 0;
-  max-width: 1244px;
 }
 
 section.phone-container {
@@ -523,49 +442,6 @@ section.phone-container {
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
-}
-
-.notch .grill-outer {
-  position: absolute;
-  bottom: 14px;
-  left: 50%;
-  width: 50px;
-  margin-left: -25px;
-  height: 10px;
-  border-radius: 1px 1px 6px 6px;
-  background: #19191a;
-  background: -moz-linear-gradient(top, #19191a 0%, #282829 100%);
-  background: -webkit-gradient(
-    left top,
-    left bottom,
-    color-stop(0%, #19191a),
-    color-stop(100%, #282829)
-  );
-  background: -webkit-linear-gradient(top, #19191a 0%, #282829 100%);
-  background: -o-linear-gradient(top, #19191a 0%, #282829 100%);
-  background: -ms-linear-gradient(top, #19191a 0%, #282829 100%);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#19191a),
-    to(#282829)
-  );
-  background: linear-gradient(to bottom, #19191a 0%, #282829 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19191a', endColorstr='#282829', GradientType=0 );
-}
-
-.notch .grill {
-  position: absolute;
-  bottom: 1px;
-  left: 1px;
-  width: 48px;
-  height: 8px;
-  border-radius: 1px 1px 5px 5px;
-  background-color: #2a2a2c;
-  background: url("https://res.cloudinary.com/dhlebhk0x/image/upload/v1540453975/pattern.svg");
-  background-repeat: repeat;
-  background-size: 3px 3px;
 }
 
 .notch .camera-1 {

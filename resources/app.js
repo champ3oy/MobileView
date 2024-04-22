@@ -1,10 +1,10 @@
 let refresh = document.getElementById("refresh");
 refresh.addEventListener("click", function () {
-  var fr = document.getElementById("myiframe");
+  let fr = document.getElementById("myiframe");
   if (fr != null) {
     document.getElementById("side").removeChild(fr);
   }
-  var iframehtml =
+  let iframehtml =
     "<iframe id='myiframe' class='screen' src='https://benawad.com'></iframe>";
   document.getElementById("side").innerHTML = iframehtml;
 });

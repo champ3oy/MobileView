@@ -1,6 +1,8 @@
 /* Relevant styles */
 .ipad-mini-3 {
-  display: inline-block;
+  display: block;
+  margin: 10px auto;
+  /* display: inline-block; */
   position: relative;
   overflow: hidden;
   box-sizing: content-box;
@@ -103,9 +105,4 @@ iframe {
   border: 0;
   width: 512px;
   height: 683px;
-}
-
-.ipad-mini-3 {
-  display: block;
-  margin: 10px auto;
 }
