@@ -9,7 +9,7 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-dropbtn {
+.dropbtn {
   background-color: #5b97c9;
   color: white;
   padding: 16px;

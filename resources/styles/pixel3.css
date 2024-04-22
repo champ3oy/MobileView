@@ -250,8 +250,7 @@ section.phone-container {
   height: 8px;
   border-radius: 1px 1px 5px 5px;
   background-color: #2a2a2c;
-  background: #2a2a2c
-    url("https://res.cloudinary.com/dhlebhk0x/image/upload/v1540453975/pattern.svg");
+  background: url("https://res.cloudinary.com/dhlebhk0x/image/upload/v1540453975/pattern.svg");
   background-repeat: repeat;
   background-size: 3px 3px;
 }
@@ -312,7 +311,7 @@ section.phone-container {
   height: 5px;
   border-radius: 7px;
   background-color: #252527;
-  background: #252527 url("../img/pattern.svg");
+  background: url("../img/pattern.svg");
   background-repeat: repeat;
   background-size: 3px 3px;
 }
@@ -564,8 +563,7 @@ section.phone-container {
   height: 8px;
   border-radius: 1px 1px 5px 5px;
   background-color: #2a2a2c;
-  background: #2a2a2c
-    url("https://res.cloudinary.com/dhlebhk0x/image/upload/v1540453975/pattern.svg");
+  background: url("https://res.cloudinary.com/dhlebhk0x/image/upload/v1540453975/pattern.svg");
   background-repeat: repeat;
   background-size: 3px 3px;
 }
