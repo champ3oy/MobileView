@@ -224,9 +224,7 @@ let activate = (context) => {
 
       const input = await vscode.window.showInputBox(options);
 
-      let protocal = input.substring(0, 4).toLocaleLowerCase();
-
-      var pattern = new RegExp(
+      let pattern = new RegExp(
         "^(https?:\\/\\/)?" + // protocol
           "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
           "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
@@ -241,7 +239,7 @@ let activate = (context) => {
         : input;
 
       if (
-        !!pattern.test(
+        pattern.test(
           _input.substring(0, 4) == "http" ? _input : `http://${_input}`
         )
       ) {
@@ -305,9 +303,7 @@ let activate = (context) => {
 
       const input = await vscode.window.showInputBox(options);
 
-      let protocal = input.substring(0, 4).toLocaleLowerCase();
-
-      var pattern = new RegExp(
+      let pattern = new RegExp(
         "^(https?:\\/\\/)?" + // protocol
           "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
           "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
@@ -322,7 +318,7 @@ let activate = (context) => {
         : input;
 
       if (
-        !!pattern.test(
+        pattern.test(
           _input.substring(0, 4) == "http" ? _input : `http://${_input}`
         )
       ) {
@@ -386,9 +382,7 @@ let activate = (context) => {
 
       const input = await vscode.window.showInputBox(options);
 
-      let protocal = input.substring(0, 4).toLocaleLowerCase();
-
-      var pattern = new RegExp(
+      let pattern = new RegExp(
         "^(https?:\\/\\/)?" + // protocol
           "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
           "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
