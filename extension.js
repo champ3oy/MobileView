@@ -456,8 +456,6 @@ let activate = (context) => {
   context.subscriptions.push(startPixel);
 };
 
-exports.activate = activate;
-
 // this method is called when your extension is deactivated
 function deactivate() {}
 
