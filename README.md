@@ -1,6 +1,6 @@
 # MobileView for VS Code
 
-120K Downloads
+204K Downloads
 
 MobileView provides a responsive mobile view for testing mobile view of your apps and websites directly in visual studio code. Currently being used by over 80,000 developers.
 
